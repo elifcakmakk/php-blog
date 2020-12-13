@@ -34,6 +34,7 @@
 <?php
 if($_POST){
     // TODO formdan ve post dan slug kaldırılacak!
+    // Tamam yapacağım
     $title=$_POST["title"];
     $slug=$_POST["slug"];
     $content=$_POST["content"];
