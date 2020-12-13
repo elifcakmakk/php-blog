@@ -1,5 +1,7 @@
 <?php include './_layouts/header.php';
-    require '../config/database.php';?>
+    require '../config/database.php';
+    include '../helpers/slugger.php';
+    ?>
     <h1 class="mt-4" style="color: #0c5460" ><strong>ADD ARTICLE</strong></h1>
     <hr>
 
@@ -31,13 +33,14 @@
 
 <?php
 if($_POST){
+    // TODO formdan ve post dan slug kaldırılacak!
     $title=$_POST["title"];
     $slug=$_POST["slug"];
     $content=$_POST["content"];
-
+  
     $data=array(
         "title"    =>$title,
-        "slug"     =>$slug,
+        "slug"     =>slugger::slugify($title),
         "content"  =>$content
     );
     $sql=("INSERT INTO articles SET 

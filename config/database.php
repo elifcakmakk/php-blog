@@ -1,9 +1,9 @@
 <?php
 
-$host= "localhost";
+$host = "localhost";
 $dbuser = "root";
-$dbpsw= "";
-$dbname="php_blog";
+$dbpsw = "database";
+$dbname = "php_blog";
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $dbuser, $dbpsw);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -11,5 +11,5 @@ try {
     echo "<p class='alert alert-success mt-3'>#ConnectionSuccess</p>";
 
 } catch (PDOException $e) {
-     echo "<p class='alert alert-danger mt-3'>#ConnectionSuccess".$e->getMessage()."</p>";
+    echo "<p class='alert alert-danger mt-3'>#ConnectionSuccess" . $e->getMessage() . "</p>";
 }
