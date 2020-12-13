@@ -7,7 +7,7 @@ require '../config/database.php';
     <h1 class="mt-4">Articles</h1>
     <hr>
 
-    <a href="" class="btn btn-info mb-3">Add Article</a>
+    <a href="article_add.php" class="btn btn-info mb-3">Add Article</a>
 
     <table class="table">
         <thead class="thead-dark">
@@ -37,9 +37,5 @@ require '../config/database.php';
 
         </tbody>
     </table>
-
-
-
-
 
 <?php require './_layouts/footer.php' ?>
