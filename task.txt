@@ -9,7 +9,7 @@
     2-3 : table data insert operation
     2-4 : table data update operation
     2-5 : sidebar categories name add
-    2-6 : categories sql file create
+    2-6 : categories sql file create |DONE
 3 : articles sql file create | DONE
 
 
