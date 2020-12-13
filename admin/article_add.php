@@ -5,18 +5,11 @@
     <h1 class="mt-4" style="color: #0c5460" ><strong>ADD ARTICLE</strong></h1>
     <hr>
 
-
 <div class="container col-12">
     <form method="post" action="article_add.php">
         <div class="form-group">
             <label style="color: #0c5460"><strong>Title</strong></label>
             <input name="title" type="text" class="form-control" placeholder="Article Title" required>
-
-        </div>
-        <div class="form-group">
-            <label style="color: #0c5460"><strong>Slug</strong></label>
-            <textarea name="slug" type="text" class="form-control" required >
-            </textarea>
 
         </div>
         <div class="form-group">
@@ -33,10 +26,8 @@
 
 <?php
 if($_POST){
-    // TODO formdan ve post dan slug kaldırılacak!
-    // Tamam yapacağım
+
     $title=$_POST["title"];
-    $slug=$_POST["slug"];
     $content=$_POST["content"];
   
     $data=array(

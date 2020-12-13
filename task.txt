@@ -3,11 +3,12 @@
 -elifcakmakk 
 (dateline 13-12-2020  : 17-12-2020 )
 1 : article add slug delete (form and method) (bugfix)
-2 : cartegory operations (future)
+2 : categories operations (future)
     2-1 : table created (categories)
     2-2 : table labels : id (int AI) , name(varchar(255)) ,slug(varchar(255))
     2-3 : table data insert operation
     2-4 : table data update operation
+    2-5 : sidebar categories name add
 
 
 
