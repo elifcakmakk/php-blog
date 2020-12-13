@@ -1,7 +1,7 @@
 <?php
-include './_layouts/header.php';
-include '../config/database.php';
-include '../helpers/slugger.php';
+include '../_layouts/header.php';
+include '../../config/database.php';
+include '../../helpers/slugger.php';
 
 //print_r($_POST);
 if ($_POST) {
@@ -18,9 +18,10 @@ WHERE id = :id");
     ));
     if ($update) {
         echo "<p class='alert alert-success'>Update Successful </p>";
-        header("Location: articles.php");
+        header("Location: index.php");
     }
     else{
         echo "<p class='alert alert-danger'>Update Failed </p>";
     }
 }
+

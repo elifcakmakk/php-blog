@@ -1,8 +1,8 @@
 --Tasks 
 -----------------------------------
--elifcakmakk 
+-elifcakmakk
 (dateline 13-12-2020  : 17-12-2020 )
-1 : article add slug delete (form and method) (bugfix)
+1 : article add slug delete (form and method) (bugfix) | DONE
 2 : categories operations (future)
     2-1 : table created (categories)
     2-2 : table labels : id (int AI) , name(varchar(255)) ,slug(varchar(255))

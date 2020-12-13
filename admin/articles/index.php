@@ -1,13 +1,13 @@
 <?php
-require './_layouts/header.php';
-require '../config/database.php';
+include '../_layouts/header.php';
+require '../../config/database.php';
 ?>
 
 
 <h1 class="mt-4">Articles</h1>
 <hr>
 
-<a href="article_add.php" class="btn btn-info mb-3">Add Article</a>
+<a href="create.php" class="btn btn-info mb-3">Add Article</a>
 
 <table class="table">
     <thead class="thead-dark">
@@ -31,7 +31,7 @@ foreach ($articles as $article) {
                 <td>" . $article['slug'] . "</td>
                 <td>" . $article['content'] . "</td>
                 <td> 
-                <a href='article_edit.php?article=". $article['id'] . "' 
+                <a href='edit.php?article=". $article['id'] . "' 
                 class='btn btn-warning'> Edit </a> <td>
              </tr>
         ";
@@ -42,4 +42,4 @@ foreach ($articles as $article) {
     </tbody>
 </table>
 
-<?php require './_layouts/footer.php'?>
+<?php require '../_layouts/footer.php' ?>

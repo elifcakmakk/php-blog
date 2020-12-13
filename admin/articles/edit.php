@@ -1,6 +1,6 @@
 <?php
-require './_layouts/header.php';
-require '../config/database.php';
+require '../_layouts/header.php';
+require '../../config/database.php';
 ?>
 
 
@@ -16,7 +16,7 @@ if (!$query) {
 
 ?>
 
-<form action="article_update.php" method="POST"  class="form-group">
+<form action="update.php" method="POST" class="form-group">
     <label for="title">Title</label>
     <input value="<?php echo $query['title'] ?> " name="title" class="form-control" >
     <label for="content">Content</label>
@@ -26,3 +26,7 @@ if (!$query) {
     <br>
     <button type="submit" class="btn btn-success" > Update</button>
 </form>
+
+<?php
+require  '../_layouts/footer.php';
+?>

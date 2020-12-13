@@ -11,10 +11,10 @@
     <title>PHP BLOG</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../assets/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../../assets/css/simple-sidebar.css" rel="stylesheet">
 
 </head>
 
@@ -26,8 +26,8 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">PHP BLOG CMS </div>
         <div class="list-group list-group-flush">
-            <a href="dashboard.php" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-            <a href="articles.php" class="list-group-item list-group-item-action bg-light">Articles</a>
+            <a href="../dashboard/index.php" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+            <a href="../articles/index.php" class="list-group-item list-group-item-action bg-light">Articles</a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->

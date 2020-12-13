@@ -1,12 +1,13 @@
-<?php include './_layouts/header.php';
-    require '../config/database.php';
-    include '../helpers/slugger.php';
+<?php include '../_layouts/header.php';
+    require '../../config/database.php';
+    include '../../helpers/slugger.php';
     ?>
+
     <h1 class="mt-4" style="color: #0c5460" ><strong>ADD ARTICLE</strong></h1>
     <hr>
 
 <div class="container col-12">
-    <form method="post" action="article_add.php">
+    <form method="post" action="create.php">
         <div class="form-group">
             <label style="color: #0c5460"><strong>Title</strong></label>
             <input name="title" type="text" class="form-control" placeholder="Article Title" required>
@@ -49,4 +50,4 @@ if($_POST){
 }
 ?>
 
-<?php include './_layouts/footer.php'?>
+<?php include '../_layouts/footer.php' ?>
