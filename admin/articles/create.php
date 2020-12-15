@@ -15,7 +15,7 @@
         </div>
         <div class="form-group">
             <label style="color: #0c5460"><strong>Content</strong></label>
-            <textarea name="content" type="text" class="form-control" >
+            <textarea name="content" type="text" class="form-control" required >
             </textarea>
 
         </div>

@@ -1,12 +1,13 @@
 <?php
 include '../_layouts/header.php';
 require '../../config/database.php';
+include '../../helpers/slugger.php';
 ?>
 
 
     <h1 class="mt-4">Categories</h1>
     <hr>
-    <a href="#" class="btn btn-info mb-3">Add Categories</a> <!-- ask hamdi how can ı add an icon?-->
+    <a href="create.php" class="btn btn-info mb-3">Add Categories</a> <!-- ask hamdi how can ı add an icon?-->
 <table class="table">
     <thead class="thead-dark">
 

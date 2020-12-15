@@ -6,9 +6,9 @@
 2 : categories operations (future)
     2-1 : table created (categories) |DONE
     2-2 : table labels : id (int AI) , name(varchar(255)) ,slug(varchar(255)) |DONE
-    2-3 : table data insert operation
+    2-3 : table data insert operation |DONE
     2-4 : table data update operation
-    2-5 : sidebar categories name add
+    2-5 : sidebar categories name add |DONE
     2-6 : categories sql file create |DONE
 3 : articles sql file create | DONE
 
