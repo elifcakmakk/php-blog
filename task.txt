@@ -13,9 +13,5 @@
 3 : articles sql file create | DONE
 
 
-
-
-
-
 -----------------------------------
 -hamdiituu 

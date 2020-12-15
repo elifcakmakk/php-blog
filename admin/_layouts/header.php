@@ -28,6 +28,7 @@
         <div class="list-group list-group-flush">
             <a href="../dashboard/index.php" class="list-group-item list-group-item-action bg-light">Dashboard</a>
             <a href="../articles/index.php" class="list-group-item list-group-item-action bg-light">Articles</a>
+            <a href="../categories/index.php" class="list-group-item list-group-item-action bg-light">Categories</a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
