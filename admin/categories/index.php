@@ -24,7 +24,7 @@ include '../../helpers/slugger.php';
             <td><?php echo $category["id"];?></td>
             <td><?php echo $category["name"];?></td>
             <td><?php echo $category["slug"];?></td>
-            <td><a href="update.php" class="btn btn-warning">Edit</a></td>
+            <td><a href="edit.php?category=<?php echo $category["id"] ?>" class="btn btn-warning">Edit</a></td>
 
         </tr>
         <?php } ?>
