@@ -12,6 +12,12 @@
     2-6 : categories sql file create |DONE
 3 : articles sql file create | DONE
 
-
+(dateline 19-12-2020  : 23-12-2020 )
+4 : navbar categories list 
+5 : keyword::cut($text)
 -----------------------------------
 -hamdiituu 
+1 : blog page create + 
+2 : blog post in page +
+
+
