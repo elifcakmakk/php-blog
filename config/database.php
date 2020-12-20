@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $dbuser = "root";
-$dbpsw = "database";
+$dbpsw = "";
 $dbname = "php_blog";
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $dbuser, $dbpsw);

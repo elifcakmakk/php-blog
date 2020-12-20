@@ -1,12 +1,11 @@
 <?php
-//database include
-
-//all categories
+require '../../config/database.php';
+$categories=$db->query("SELECT * FROM categories",PDO::FETCH_ASSOC);
 
 ?>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">PHP BLOG</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -15,17 +14,22 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
 
-            <?php
-
-        //all categories foreach
-
-        ?>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home [CategoryName]
+        <?php
+      
+            foreach ($categories as $category){?>
+          
+        <li class="nav-item active">
+                <a class="nav-link" href="#"> <?php echo $category["name"];?>
                     
                     <span class="sr-only">(current)</span></a>
             </li>
 
+          
+            
+        
+        
+        <?php } ?>
+    
 
 
 
