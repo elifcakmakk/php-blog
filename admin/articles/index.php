@@ -22,22 +22,22 @@ require '../../config/database.php';
         <?php
 
 $articles = $db->query("select * from articles", PDO::FETCH_ASSOC);
-foreach ($articles as $article) {
-    //print_r($article);
-    echo "
+foreach ($articles as $article) { ?>
+  
+
             <tr>
-                <td>" . $article['id'] . "</td>
-                <td>" . $article['title'] . "</td>
-                <td>" . $article['slug'] . "</td>
-                <td>" . $article['content'] . "</td>
-                <td> 
-                <a href='edit.php?article=". $article['id'] . "' 
+                <td><?php echo $article["id"] ?></td>
+                <td><?php echo $article["title"] ?></td>
+                <td><?php echo $article["slug"] ?></td>
+                <td><?php echo $article["content"] ?></td>
+                <td>
+                <a href="edit.php?article=<?php echo $article["id"] ?>"
                 class='btn btn-warning'> Edit </a> <td>
              </tr>
-        ";
-}
+        
+<?php } ?>
 
-?>
+
 
     </tbody>
 </table>

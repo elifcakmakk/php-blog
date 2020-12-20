@@ -13,7 +13,7 @@
 3 : articles sql file create | DONE
 
 (dateline 19-12-2020  : 23-12-2020 )
-4 : navbar categories list 
+4 : navbar categories list |DONE
 5 : keyword::cut($text)
 
 -----------------------------------

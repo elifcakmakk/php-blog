@@ -1,6 +1,7 @@
 <?php
 include '../_layouts/header.php';
 require '../../config/database.php';
+include '../../helpers/keyword.php';
 ?>
 
 
@@ -27,7 +28,7 @@ require '../../config/database.php';
           ?>
         <div class="col-md-3">
             <h2><?php echo $article['title'] ?></h2>
-            <p> <?php echo $article['content'] ?> </p>
+            <p> <?php echo keyword::cut($article['content']) ?> </p>
             <p class="text-muted"> <?php echo $article['article_date'] ?> </p>
             <p><a class="btn btn-warning" href="detail.php?slug=<?php echo $article['slug'] ?>" role="button">Article
                     details &raquo;</a></p>
