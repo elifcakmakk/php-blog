@@ -36,6 +36,7 @@ if($_POST){
         "title"    =>$title,
         "slug"     =>slugger::slugify($title),
         "content"  =>keyword::cut($content),
+        // TODO 2 ":category_id => (int) $_POST['category_id'] insert into güncelle
     );
     $sql=("INSERT INTO articles SET 
                 title   =:title,

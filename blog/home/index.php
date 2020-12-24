@@ -21,11 +21,11 @@ include '../../helpers/keyword.php';
 <div class="container mt-5">
     <!-- Example row of columns -->
     <div class="row">
-    
+
         <!-- article post -->
         <?php $articles = $db->query("select * from articles", PDO::FETCH_ASSOC);
-      foreach ($articles as $article) {
-          ?>
+foreach ($articles as $article) {
+    ?>
         <div class="col-md-3">
             <h2><?php echo $article['title'] ?></h2>
             <p> <?php echo keyword::cut($article['content']) ?> </p>
@@ -35,8 +35,8 @@ include '../../helpers/keyword.php';
         </div>
 
         <?php
-      } ?>
-       
+}?>
+
     </div>
     <!-- article post end -->
     <hr>

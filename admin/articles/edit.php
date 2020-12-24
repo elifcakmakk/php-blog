@@ -25,6 +25,17 @@ if (!$query) {
     <input type="hidden" name="id" value="<?php echo $query['id'] ?>">
     <br>
     <button type="submit" class="btn btn-success" > Update</button>
+    <?php // TODO 1 select option categoris option
+    /*
+    <select name="category_id" id="category_id">
+    
+    <option value="1">Elif</option>
+    <option value="2">Hamdi</option>
+    <option value="3">First Category</option>
+  
+   </select>
+    */
+    ?>
 </form>
 
 <?php

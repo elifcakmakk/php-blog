@@ -15,6 +15,7 @@ WHERE id = :id");
         ":slug"=> slugger::slugify($_POST['title']),
         ":content" => $_POST['content'],
         ":id"=>(int) $_POST['id']
+        
     ));
     if ($update) {
         echo "<p class='alert alert-success'>Update Successful </p>";
