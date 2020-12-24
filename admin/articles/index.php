@@ -1,6 +1,8 @@
 <?php
 include '../_layouts/header.php';
 require '../../config/database.php';
+include '../../helpers/keyword.php';
+
 ?>
 
 
@@ -29,9 +31,9 @@ foreach ($articles as $article) { ?>
                 <td><?php echo $article["id"] ?></td>
                 <td><?php echo $article["title"] ?></td>
                 <td><?php echo $article["slug"] ?></td>
-                <td><?php echo $article["content"] ?></td>
-                <td>
-                <a href="edit.php?article=<?php echo $article["id"] ?>"
+                <td><?php echo keyword::cut($article["content"])?></td>
+                
+               <td><a href="edit.php?article=<?php echo $article["id"] ?>"
                 class='btn btn-warning'> Edit </a> <td>
              </tr>
         

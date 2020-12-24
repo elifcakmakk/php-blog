@@ -14,7 +14,7 @@
 
 (dateline 19-12-2020  : 23-12-2020 )
 4 : navbar categories list |DONE
-5 : keyword::cut($text)
+5 : keyword::cut($text) |DONE
 
 -----------------------------------
 -hamdiituu 

@@ -1,6 +1,7 @@
 <?php include '../_layouts/header.php';
     require '../../config/database.php';
     include '../../helpers/slugger.php';
+    include '../../helpers/keyword.php';
     ?>
 
     <h1 class="mt-4" style="color: #0c5460" ><strong>ADD ARTICLE</strong></h1>
@@ -34,7 +35,7 @@ if($_POST){
     $data=array(
         "title"    =>$title,
         "slug"     =>slugger::slugify($title),
-        "content"  =>$content
+        "content"  =>keyword::cut($content),
     );
     $sql=("INSERT INTO articles SET 
                 title   =:title,
