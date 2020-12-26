@@ -1,9 +1,6 @@
 <?php
+include '../../config.php';
 
-$host = "localhost";
-$dbuser = "root";
-$dbpsw = "";
-$dbname = "php_blog";
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $dbuser, $dbpsw);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
