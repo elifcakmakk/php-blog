@@ -8,12 +8,14 @@ if ($_POST) {
     $query = $db->prepare("UPDATE articles SET
 title =:title,
 slug=:slug,
-content =:content
+content =:content,
+category_id =:category_id
 WHERE id = :id");
     $update = $query->execute(array(
         ":title" => $_POST['title'],
         ":slug"=> slugger::slugify($_POST['title']),
         ":content" => $_POST['content'],
+        ":category_id"=> (int) $_POST['category'],
         ":id"=>(int) $_POST['id']
         
     ));
