@@ -30,7 +30,6 @@
                      <option value="<?php echo $category['id'] ?>" ><?php echo $category['name']; ?></option>
                  <?php } ?>
 
-               
             </select>
         </div>
 

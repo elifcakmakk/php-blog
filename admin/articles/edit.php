@@ -14,6 +14,8 @@ if (!$query) {
     die();
 }
 
+
+
 ?>
 
 <form action="update.php" method="POST" class="form-group">
@@ -24,6 +26,28 @@ if (!$query) {
     </textarea>
     <input type="hidden" name="id" value="<?php echo $query['id'] ?>">
     <br>
+     <label for="title">Category</label>
+     <select  name="category" class="form-control mb-3">
+                <option disabled >Please select category</option>
+               
+                <?php
+                $categories = $db->query("select * from categories", PDO::FETCH_ASSOC);
+                
+                 foreach ($categories as $category) { ?>
+                     <option 
+
+                     <?php
+                     if($query['category_id'] == $category['id']){
+                        echo "selected";
+                     }
+                     ?>
+
+                     value="<?php echo $category['id'] ?>" >
+                     <?php echo $category['name']; ?>
+                     </option>
+                 <?php } ?>
+
+            </select>
     <button type="submit" class="btn btn-success" > Update</button>
     <?php // TODO 1 select option categoris option
     /*
