@@ -18,7 +18,20 @@
             <label style="color: #0c5460"><strong>Content</strong></label>
             <textarea name="content" type="text" class="form-control" required >
             </textarea>
+        </div>
+        <div class="form-group">
+            <label style="color: #0c5460"><strong>Category</strong></label>
+            <select name="category" class="form-control">
+                <option disabled selected >Please select category</option>
+                <?php
+                $categories = $db->query("select * from categories", PDO::FETCH_ASSOC);
+                
+                 foreach ($categories as $category) { ?>
+                     <option value="<?php echo $category['id'] ?>" ><?php echo $category['name']; ?></option>
+                 <?php } ?>
 
+               
+            </select>
         </div>
 
 
@@ -27,21 +40,25 @@
 </div>
 
 <?php
+
+
 if($_POST){
 
     $title=$_POST["title"];
     $content=$_POST["content"];
+    $category_id =$_POST['category'];
   
     $data=array(
         "title"    =>$title,
         "slug"     =>slugger::slugify($title),
         "content"  =>keyword::cut($content),
-        // TODO 2 ":category_id => (int) $_POST['category_id'] insert into güncelle
+        "category_id" =>(int)$category_id
     );
     $sql=("INSERT INTO articles SET 
                 title   =:title,
                 slug    =:slug,
-                content =:content");
+                content =:content,
+                category_id =:category_id ");
     $insert=$db->prepare($sql);
     $result=$insert->execute($data);
     if($result){
