@@ -13,13 +13,15 @@ include '../../helpers/keyword.php';
 
 <table class="table">
     <thead class="thead-dark">
-        <th>#</th>
-        <th>Title</th>
-        <th>Slug</th>
-        <th>Content</th>
-        <th>Category Name</th> <th></th>    
-        <th>Category Slug</th> <th><th>
-        <th>Process</th>
+       <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Slug</th>
+        <th scope="col">Content</th>
+        <th scope="col">Category Name</th>   
+        <th scope="col">Category Slug</th>
+        <th scope="col">Process</th>
+        </tr>
  </thead>
     <tbody>
 
@@ -43,8 +45,8 @@ foreach ($articles as $article) { ?>
                 <td><?php echo $article["title"] ?></td>
                 <td><?php echo $article["slug"] ?></td>
                 <td><?php echo keyword::cut($article["content"])?></td>
-                <td><?php echo $article["category"]?><td>
-                <td><?php echo $article["category_slug"]?><td>
+                <td><?php echo $article["category"]?></td>
+                <td><?php echo $article["category_slug"]?></td>
                 <td><a href="edit.php?article=<?php echo $article["id"] ?>"
                 class='btn btn-warning'> Edit </a> <td>
             </tr>

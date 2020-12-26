@@ -17,9 +17,9 @@
 5 : keyword::cut($text) |DONE
 
 (dateline 24-12-2020 -25-12-2020)
-6: category index page  // TODO
+6: category index page |DONE 
 7: article add category select --> https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select // TODO
-8 :article index table add category -->join // TODO
+8 :article index table add category |DONE -->join 
 
 -----------------------------------
 -hamdiituu 
