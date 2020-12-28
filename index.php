@@ -1,2 +1,3 @@
 <?php
- echo "merhaba php";
+//redirect
+header("Location  : ./blog/home/");

@@ -1,7 +1,7 @@
 <?php
 require '../../config/database.php';
 $categories=$db->query("SELECT * FROM categories",PDO::FETCH_ASSOC);
-
+session_start();
 ?>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -34,10 +34,25 @@ $categories=$db->query("SELECT * FROM categories",PDO::FETCH_ASSOC);
 
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <?php
+        
+        if(isset($_SESSION['login'])){
+            echo '<a class="btn btn-warning mr-3" href="../login/logout.php">Logout</a> 
+            <a class="btn btn-warning mr-3" href="../../admin/articles/index.php">Go to Admin</a>
+            <b class="text-light" >' . $_SESSION['email'] . '  </b>   
+            ';
+
+        }else{
+            echo '<a class="btn btn-warning mr-3" href="../login/index.php">Login</a>';
+        }
+        
+        ?>
+        
+        
+        <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </form> -->
     </div>
 </nav>
 
