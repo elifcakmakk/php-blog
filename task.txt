@@ -27,9 +27,4 @@
 -hamdiituu 
 1 : blog page create + 
 2 : blog post in page +
-3 : articles endpoint oluşturma
-4 : categories endpoint oluşturma
-5 : jwt aut oluşturma 
-6 : makale ekletme endpoint
-7 : makale düzenle endpoint
-8 : makale sil endpoint
+3 : articles endpoint oluşturma +

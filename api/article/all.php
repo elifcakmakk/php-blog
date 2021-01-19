@@ -1,4 +1,5 @@
 <?php
+require '../../config/cors.php';
 require '../../config/database.php';
 
 // all article sql query
