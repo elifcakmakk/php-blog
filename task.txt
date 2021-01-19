@@ -9,7 +9,7 @@
     2-3 : table data insert operation |DONE
     2-4 : table data update operation |DONE
     2-5 : sidebar categories name add |DONE
-    2-6 : categories sql file create |DONE
+    2-6 : categories sql file create  |DONE
 3 : articles sql file create | DONE
 
 (dateline 19-12-2020  : 23-12-2020 )
@@ -21,9 +21,15 @@
 7: article add category select --> https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select // TODO
 8 :article index table add category |DONE -->join 
 
+9 :makele silme 
 -----------------------------------
+
 -hamdiituu 
 1 : blog page create + 
 2 : blog post in page +
-
-
+3 : articles endpoint oluşturma
+4 : categories endpoint oluşturma
+5 : jwt aut oluşturma 
+6 : makale ekletme endpoint
+7 : makale düzenle endpoint
+8 : makale sil endpoint

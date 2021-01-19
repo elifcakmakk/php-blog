@@ -19,26 +19,26 @@ include '../../helpers/slugger.php';
 </div>
 
 <?php
-if($_POST){
+if ($_POST) {
 
-    $name=$_POST["name"];
-    $data=array(
-        "name"    =>$name,
-        "slug"     =>slugger::slugify($name),
-    );
-    $sql=("INSERT INTO categories SET 
+	$name = $_POST["name"];
+	$data = array(
+		"name" => $name,
+		"slug" => slugger::slugify($name),
+	);
+	$sql = ("INSERT INTO categories SET
                 name   =:name,
                 slug    =:slug
                 ");
-    $insert=$db->prepare($sql);
-    $result=$insert->execute($data);
-    if($result){
-        echo "<p class='alert alert-success mt-3'>SUCCESSFUL</p>";
-    }else{
-        echo "<p class='alert alert-success mt-3'>FAILED</p>";
-    }
+	$insert = $db->prepare($sql);
+	$result = $insert->execute($data);
+	if ($result) {
+		echo "<p class='alert alert-success mt-3'>SUCCESSFUL</p>";
+	} else {
+		echo "<p class='alert alert-success mt-3'>FAILED</p>";
+	}
 }
 ?>
 
-<?php include "../_layouts/footer.php"; ?>
+<?php include "../_layouts/footer.php";?>
 
